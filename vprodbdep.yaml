@@ -20,10 +20,10 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
+          # resources:
+            # limits:
+              # memory: "128Mi"
+              # cpu: "500m"
           ports:
             - name: vprodb-port
               containerPort: 3306
